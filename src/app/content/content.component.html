@@ -1,0 +1,105 @@
+<div class="holder">
+    <div class="div-grande">
+        <div class="navbar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6BC8QZs6HOImYGk6o2VhS4LSFspbnvRU5Dg&s" alt="Profile picture" class="profile">
+            <input type="checkbox" id="toggle-menu" class="menu-checkbox">
+            <label for="toggle-menu" class="menu-icon">
+                <i class="bi bi-chevron-down"></i>
+            </label>
+            <div class="dropdown-menu">
+                <p (click)="onSettings()">Account Settings</p>
+                <p (click)="onDetails()">Details</p>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <div class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>Threat Analysis</li>
+                    <li>Incident Reports</li>
+                    <li>System Logs</li>
+                    <li>Settings</li>
+                    <li style="color: red;" (click)="onLogin()">Logout</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Cybertech Inc. Advanced Monitoring Dashboard</h1>
+                <p>Welcome to the Cybertech Inc. critical infrastructure and threat intelligence dashboard.</p>
+
+                <div class="complex-data">
+                    <h2>Data Flow Metrics</h2>
+                    <table>
+                        <tr>
+                            <th>Node</th>
+                            <th>Data Rate (Mbps)</th>
+                            <th>Packet Loss (%)</th>
+                            <th>Response Time (ms)</th>
+                        </tr>
+                        <tr>
+                            <td>Alpha-47</td>
+                            <td>120.45</td>
+                            <td>0.02</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>Beta-21</td>
+                            <td>98.67</td>
+                            <td>0.08</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>Gamma-03</td>
+                            <td>132.58</td>
+                            <td>0.01</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>Delta-12</td>
+                            <td>110.23</td>
+                            <td>0.05</td>
+                            <td>50</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="complex-stats">
+                    <h2>Intrusion Detection Logs</h2>
+                    <ul>
+                        <li>Suspicious SSH Activity: 432 attempts detected in the last 24 hours</li>
+                        <li>SQL Injection Pattern Identified: 57 unique IP addresses flagged</li>
+                        <li>Data Exfiltration Warning: Unusual outbound traffic from node Delta-12</li>
+                        <li>Unrecognized Device Connected: MAC Address 00:14:22:01:23:45</li>
+                        <li>Critical Memory Leak: Process ID 3478 using 98% RAM</li>
+                    </ul>
+                </div>
+
+                <div class="stats">
+                    <div class="chart">
+                        <h3>Active Threats</h3>
+                        <div class="bar-chart">
+                            <div class="bar" style="height: 70%;"></div>
+                            <div class="bar" style="height: 50%;"></div>
+                            <div class="bar" style="height: 90%;"></div>
+                            <div class="bar" style="height: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <h3>Resolved Incidents</h3>
+                        <div class="line-chart">
+                            <div class="line-segment" style="height: 30%;"></div>
+                            <div class="line-segment" style="height: 50%;"></div>
+                            <div class="line-segment" style="height: 80%;"></div>
+                            <div class="line-segment" style="height: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <h3>Alerts Today</h3>
+                        <div class="pie-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

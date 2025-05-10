@@ -1,0 +1,36 @@
+    <div class="settings-container">
+        <h1>Account Settings</h1>
+        <div class="settings-card">
+            <h2>Profile Information</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="you@example.com">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="••••••••">
+
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic">
+
+            <button class="save-btn">Save Changes</button>
+        </div>
+
+        <div class="settings-card">
+            <h2>Security</h2>
+            <label for="two-factor">Two-Factor Authentication:</label>
+            <select id="two-factor">
+                <option value="disabled">Disabled</option>
+                <option value="enabled">Enabled</option>
+            </select>
+
+            <label for="notifications">Login Notifications:</label>
+            <select id="notifications">
+                <option value="enabled">Enabled</option>
+                <option value="disabled">Disabled</option>
+            </select>
+
+            <button class="save-btn">Update Security</button>
+        </div>
+    </div>

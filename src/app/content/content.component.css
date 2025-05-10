@@ -1,0 +1,269 @@
+.holder {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div-grande {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #282828;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: right;
+}
+
+.profile {
+    background-color: #444;
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 0.75rem 0;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #444;
+}
+
+.content {
+    width: 80%;
+    padding: 2rem;
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.chart {
+    background-color: #444;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.bar-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 150px;
+}
+
+.bar {
+    width: 20%;
+    background-color: #00ff7f;
+    border-radius: 3px;
+}
+
+.line-chart {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-end;
+    height: 150px;
+}
+
+.line-segment {
+    width: 20%;
+    background-color: #00bfff;
+    border-radius: 3px;
+}
+
+.pie-chart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#ff4500 0% 40%, #ffa500 40% 70%, #00ff7f 70% 100%);
+    margin: auto;
+}
+
+/* Complex Data Tables */
+.complex-data, .complex-stats {
+    margin: 1.5rem 0;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.complex-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.complex-data th, .complex-data td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    color: #E0E0E0;
+}
+
+.complex-data th {
+    background-color: #444;
+}
+
+.complex-data tr:hover {
+    background-color: #555;
+}
+
+.complex-stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.complex-stats li {
+    margin: 0.5rem 0;
+    color: #E0E0E0;
+    padding: 0.5rem;
+    background-color: #444;
+    border-radius: 3px;
+}
+
+.complex-stats li:hover {
+    background-color: #555;
+}
+
+.complex-stats h2, .complex-data h2 {
+    margin-bottom: 1rem;
+    color: #f5f5f5;
+}
+
+/* Dropdown Menu */
+.menu-icon {
+    cursor: pointer;
+    color: white;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu-checkbox:checked + .menu-icon + .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu p {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.dropdown-menu p:hover {
+    background-color: #555;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Data Flow Metrics */
+.data-flow-table {
+    margin: 1rem 0;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.data-flow-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-flow-table th, .data-flow-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    color: #E0E0E0;
+}
+
+.data-flow-table th {
+    background-color: #444;
+}
+
+.data-flow-table tr:hover {
+    background-color: #555;
+}
+
+h1, h2, h3 {
+    color: #f5f5f5;
+}
+
+p {
+    color: #ccc;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #555;
+}
+
+th {
+    background-color: #444;
+}
+
+td {
+    background-color: #333;
+}
+
+tr:hover {
+    background-color: #555;
+}
