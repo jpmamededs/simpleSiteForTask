@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+
+  imageUrl: string = 'assets/cybertechlogo.png';
+
   constructor(private router: Router) {}
 
   onLogin(): void {
