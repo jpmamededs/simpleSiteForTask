@@ -1,8 +1,8 @@
 <div class="holder">
   <img [src]="imageUrl" alt="logo">
   <div class="login-holder">
-    <input type="text" placeholder="Username" id="username">
-    <input type="text" placeholder="Password" id="password">
+    <input type="text" placeholder="Username" id="username" autocomplete="off">
+    <input type="text" placeholder="Password" id="password" autocomplete="new-password">
     <button class="login-btn" (click)="onLogin()">Login</button>
   </div>
 </div>
